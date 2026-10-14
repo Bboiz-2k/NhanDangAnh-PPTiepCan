@@ -1,0 +1,13 @@
+{
+  "raw_dir": "data/raw/flower_photos",
+  "manifest": "data/manifest.csv",
+  "class_names": "data/class_names.json",
+  "out_dir": "outputs",
+  "seed": 42,
+  "split": {"train": 0.70, "val": 0.15, "test": 0.15},
+  "hog": {"size": 128, "orientations": 9, "pixels_per_cell": [8, 8],
+          "cells_per_block": [2, 2], "block_norm": "L2-Hys"},
+  "svm": {"C_grid": [0.1, 1, 10], "max_iter": 5000},
+  "resnet": {"lr": 0.001, "batch_size": 32, "epochs": 15, "patience": 3},
+  "timing": {"warmup": 10, "n_images": 100}
+}
