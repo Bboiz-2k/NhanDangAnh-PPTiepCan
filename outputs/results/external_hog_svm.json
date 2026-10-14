@@ -1,0 +1,91 @@
+{
+  "system": "HOG + SVM",
+  "n_images": 20,
+  "correct": 5,
+  "accuracy": 0.25,
+  "per_class": {
+    "daisy": "0/4",
+    "dandelion": "2/4",
+    "roses": "2/4",
+    "sunflowers": "1/4",
+    "tulips": "0/4"
+  },
+  "wrong": [
+    {
+      "file": "tải xuống (1).jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "file": "tải xuống (2).jpg",
+      "true": "daisy",
+      "pred": "tulips"
+    },
+    {
+      "file": "tải xuống (3).jpg",
+      "true": "daisy",
+      "pred": "sunflowers"
+    },
+    {
+      "file": "tải xuống.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "file": "tải xuống (1).jpg",
+      "true": "dandelion",
+      "pred": "tulips"
+    },
+    {
+      "file": "tải xuống (2).jpg",
+      "true": "dandelion",
+      "pred": "tulips"
+    },
+    {
+      "file": "tải xuống (1).jpg",
+      "true": "roses",
+      "pred": "dandelion"
+    },
+    {
+      "file": "tải xuống (2).jpg",
+      "true": "roses",
+      "pred": "daisy"
+    },
+    {
+      "file": "tải xuống (1).jpg",
+      "true": "sunflowers",
+      "pred": "daisy"
+    },
+    {
+      "file": "tải xuống (4).jpg",
+      "true": "sunflowers",
+      "pred": "daisy"
+    },
+    {
+      "file": "tải xuống.jpg",
+      "true": "sunflowers",
+      "pred": "daisy"
+    },
+    {
+      "file": "tải xuống (1).jpg",
+      "true": "tulips",
+      "pred": "sunflowers"
+    },
+    {
+      "file": "tải xuống (2).jpg",
+      "true": "tulips",
+      "pred": "daisy"
+    },
+    {
+      "file": "tải xuống (3).jpg",
+      "true": "tulips",
+      "pred": "daisy"
+    },
+    {
+      "file": "tải xuống.jpg",
+      "true": "tulips",
+      "pred": "daisy"
+    }
+  ],
+  "note": "Ảnh tự chụp, số lượng nhỏ nên chỉ mang tính tham khảo; không gộp vào Test."
+}

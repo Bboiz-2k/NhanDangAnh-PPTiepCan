@@ -1,0 +1,15 @@
+{
+  "system": "ResNet18 (transfer learning)",
+  "n_images": 20,
+  "correct": 20,
+  "accuracy": 1.0,
+  "per_class": {
+    "daisy": "4/4",
+    "dandelion": "4/4",
+    "roses": "4/4",
+    "sunflowers": "4/4",
+    "tulips": "4/4"
+  },
+  "wrong": [],
+  "note": "Ảnh tự chụp, số lượng nhỏ nên chỉ mang tính tham khảo; không gộp vào Test."
+}

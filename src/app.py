@@ -1,17 +1,17 @@
 """B8: demo Streamlit. Chạy: streamlit run src/app.py"""
 import json
 import time
-
+ 
 import streamlit as st
 from PIL import Image
-
+ 
 from common import FIGURES, MODELS, RAW, RESULTS, class_names
-
+ 
 st.set_page_config(page_title="Nhận dạng ảnh hoa", layout="wide")
 st.title("Nhận dạng ảnh: HOG + SVM so với ResNet18")
 classes = class_names()
-
-
+ 
+ 
 @st.cache_resource
 def get_systems():
     systems = {}
@@ -22,11 +22,11 @@ def get_systems():
         from resnet18_tl import ResNet18
         systems["resnet18"] = ResNet18()
     return systems
-
-
+ 
+ 
 systems = get_systems()
 tab1, tab2 = st.tabs(["Dự đoán một ảnh", "Đánh giá tập Test (kết quả đã lưu)"])
-
+ 
 with tab1:
     st.caption("Chỉ dự đoán ảnh được tải lên. Demo chỉ biết 5 lớp: " + ", ".join(classes))
     up = st.file_uploader("Tải ảnh hoa", type=["jpg", "jpeg", "png"])
@@ -44,7 +44,7 @@ with tab1:
             col.write(f"Thời gian: {ms:.1f} ms (1 ảnh, gồm tiền xử lý)")
             col.caption(kind)
             col.bar_chart({c: v for c, v in zip(classes, scores)})
-
+ 
 with tab2:
     for key in ("hog_svm", "resnet18"):
         f = RESULTS / f"{key}_test.json"
@@ -67,3 +67,13 @@ with tab2:
     hist = FIGURES / "resnet18_history.png"
     if hist.exists():
         st.image(str(hist), caption="Lịch sử học ResNet18", width=420)
+ 
+    for key in ("hog_svm", "resnet18"):
+        f = RESULTS / f"external_{key}.json"
+        if f.exists():
+            e = json.loads(f.read_text(encoding="utf-8"))
+            st.subheader(f"Ảnh ngoài nguồn - {e['system']}")
+            st.write(f"Đúng {e['correct']}/{e['n_images']} ảnh tự chụp (accuracy {e['accuracy']}). {e['note']}")
+            st.dataframe(e["per_class"])
+            if e["wrong"]:
+                st.write("Ảnh dự đoán sai:", e["wrong"])
