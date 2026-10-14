@@ -1,0 +1,36 @@
+{
+  "hog": {
+    "size": 128,
+    "orientations": 9,
+    "pixels_per_cell": [
+      8,
+      8
+    ],
+    "cells_per_block": [
+      2,
+      2
+    ],
+    "block_norm": "L2-Hys"
+  },
+  "vector_dim": 8100,
+  "chosen_C": 0.1,
+  "fit_seconds_chosen": 43.73,
+  "grid": [
+    {
+      "C": 0.1,
+      "val_macro_f1": 0.3094,
+      "fit_seconds": 43.73
+    },
+    {
+      "C": 1,
+      "val_macro_f1": 0.3093,
+      "fit_seconds": 41.59
+    },
+    {
+      "C": 10,
+      "val_macro_f1": 0.3093,
+      "fit_seconds": 43.53
+    }
+  ],
+  "note": "th\u1eddi gian fit kh\u00f4ng g\u1ed3m th\u1eddi gian tr\u00edch HOG"
+}

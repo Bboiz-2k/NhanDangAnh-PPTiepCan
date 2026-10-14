@@ -1,0 +1,147 @@
+{
+  "system": "ResNet18 (transfer learning)",
+  "split": "test",
+  "n_images": 547,
+  "accuracy": 0.8958,
+  "macro_f1": 0.8956,
+  "per_class": {
+    "daisy": {
+      "precision": 0.9222,
+      "recall": 0.883,
+      "f1-score": 0.9022,
+      "support": 94
+    },
+    "dandelion": {
+      "precision": 0.9037,
+      "recall": 0.9104,
+      "f1-score": 0.9071,
+      "support": 134
+    },
+    "roses": {
+      "precision": 0.8725,
+      "recall": 0.9271,
+      "f1-score": 0.899,
+      "support": 96
+    },
+    "sunflowers": {
+      "precision": 0.8571,
+      "recall": 0.9231,
+      "f1-score": 0.8889,
+      "support": 104
+    },
+    "tulips": {
+      "precision": 0.9259,
+      "recall": 0.8403,
+      "f1-score": 0.8811,
+      "support": 119
+    }
+  },
+  "confusion_matrix": [
+    [
+      83,
+      7,
+      1,
+      1,
+      2
+    ],
+    [
+      6,
+      122,
+      1,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      89,
+      3,
+      4
+    ],
+    [
+      0,
+      5,
+      1,
+      96,
+      2
+    ],
+    [
+      1,
+      1,
+      10,
+      7,
+      100
+    ]
+  ],
+  "timing": {
+    "mean_ms": 24.75,
+    "median_ms": 24.19,
+    "n": 100,
+    "warmup": 10,
+    "batch": 1,
+    "device": "CPU"
+  },
+  "model_size_mb": 44.79,
+  "wrong_examples": [
+    {
+      "path": "daisy\\2551708158_1f10e81e11.jpg",
+      "true": "daisy",
+      "pred": "tulips"
+    },
+    {
+      "path": "daisy\\8021540573_c56cf9070d_n.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "daisy\\3117644024_1cbb59a509_n.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "daisy\\530738000_4df7e4786b.jpg",
+      "true": "daisy",
+      "pred": "sunflowers"
+    },
+    {
+      "path": "daisy\\15760153042_a2a90e9da5_m.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "daisy\\3494265422_9dba8f2191_n.jpg",
+      "true": "daisy",
+      "pred": "tulips"
+    },
+    {
+      "path": "daisy\\5700781400_65761f3fce.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "daisy\\476856232_7c35952f40_n.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "daisy\\2666572212_2caca8de9f_n.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "daisy\\517054463_036db655a1_m.jpg",
+      "true": "daisy",
+      "pred": "roses"
+    },
+    {
+      "path": "daisy\\15760811380_4d686c892b_n.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "dandelion\\17189437699_a9171b6ae3.jpg",
+      "true": "dandelion",
+      "pred": "daisy"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "system": "HOG + SVM",
+  "split": "test",
+  "n_images": 547,
+  "accuracy": 0.3473,
+  "macro_f1": 0.3361,
+  "per_class": {
+    "daisy": {
+      "precision": 0.2857,
+      "recall": 0.234,
+      "f1-score": 0.2573,
+      "support": 94
+    },
+    "dandelion": {
+      "precision": 0.4155,
+      "recall": 0.4403,
+      "f1-score": 0.4275,
+      "support": 134
+    },
+    "roses": {
+      "precision": 0.3012,
+      "recall": 0.2604,
+      "f1-score": 0.2793,
+      "support": 96
+    },
+    "sunflowers": {
+      "precision": 0.296,
+      "recall": 0.3558,
+      "f1-score": 0.3231,
+      "support": 104
+    },
+    "tulips": {
+      "precision": 0.3917,
+      "recall": 0.395,
+      "f1-score": 0.3933,
+      "support": 119
+    }
+  },
+  "confusion_matrix": [
+    [
+      22,
+      19,
+      13,
+      18,
+      22
+    ],
+    [
+      12,
+      59,
+      19,
+      27,
+      17
+    ],
+    [
+      16,
+      24,
+      25,
+      17,
+      14
+    ],
+    [
+      10,
+      20,
+      17,
+      37,
+      20
+    ],
+    [
+      17,
+      20,
+      9,
+      26,
+      47
+    ]
+  ],
+  "timing": {
+    "mean_ms": 3.93,
+    "median_ms": 3.84,
+    "n": 100,
+    "warmup": 10,
+    "batch": 1,
+    "device": "CPU"
+  },
+  "model_size_mb": 0.52,
+  "wrong_examples": [
+    {
+      "path": "daisy\\134372449_0f7166d96c_n.jpg",
+      "true": "daisy",
+      "pred": "sunflowers"
+    },
+    {
+      "path": "daisy\\3356112863_75da8bca2c_m.jpg",
+      "true": "daisy",
+      "pred": "sunflowers"
+    },
+    {
+      "path": "daisy\\2551708158_1f10e81e11.jpg",
+      "true": "daisy",
+      "pred": "tulips"
+    },
+    {
+      "path": "daisy\\5765646947_82e95a9cc9_n.jpg",
+      "true": "daisy",
+      "pred": "tulips"
+    },
+    {
+      "path": "daisy\\459931395_24bf6531fe_n.jpg",
+      "true": "daisy",
+      "pred": "roses"
+    },
+    {
+      "path": "daisy\\495098110_3a4bb30042_n.jpg",
+      "true": "daisy",
+      "pred": "roses"
+    },
+    {
+      "path": "daisy\\3717746329_53f515c6a6_m.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "daisy\\8021540573_c56cf9070d_n.jpg",
+      "true": "daisy",
+      "pred": "dandelion"
+    },
+    {
+      "path": "daisy\\147068564_32bb4350cc.jpg",
+      "true": "daisy",
+      "pred": "tulips"
+    },
+    {
+      "path": "daisy\\3773181799_5def396456.jpg",
+      "true": "daisy",
+      "pred": "roses"
+    },
+    {
+      "path": "daisy\\20773528301_008fcbc5a1_n.jpg",
+      "true": "daisy",
+      "pred": "sunflowers"
+    },
+    {
+      "path": "daisy\\9529916092_de70623523_n.jpg",
+      "true": "daisy",
+      "pred": "tulips"
+    }
+  ]
+}

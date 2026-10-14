@@ -1,0 +1,79 @@
+{
+  "config": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "epochs": 15,
+    "patience": 3
+  },
+  "device": "cpu",
+  "best_val_loss": 0.2822,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8684,
+      "val_loss": 0.5222
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4371,
+      "val_loss": 0.4131
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3547,
+      "val_loss": 0.3623
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3022,
+      "val_loss": 0.3395
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.28,
+      "val_loss": 0.3256
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.265,
+      "val_loss": 0.3167
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.2514,
+      "val_loss": 0.3058
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.2385,
+      "val_loss": 0.2908
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.2279,
+      "val_loss": 0.2894
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.213,
+      "val_loss": 0.2822
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.2037,
+      "val_loss": 0.2912
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.1893,
+      "val_loss": 0.2829
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.1933,
+      "val_loss": 0.2895
+    }
+  ],
+  "train_seconds": 1027.3,
+  "note": "kh\u00f4ng g\u1ed3m giai \u0111o\u1ea1n pretrained ImageNet; backbone \u0111\u00f3ng b\u0103ng"
+}
